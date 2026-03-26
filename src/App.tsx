@@ -121,7 +121,7 @@ const Hero = () => {
           >
             <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-dark-bg/90 z-10" />
             <motion.img 
-              src="./image.png" 
+              src="/Netsanet/image.png" 
               alt="Netsanet Desta" 
               className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000"
               style={{ filter: `blur(${blur}px)` }}
@@ -151,7 +151,7 @@ const Hero = () => {
           >
             <div className="absolute inset-0 bg-neon-magenta/10 mix-blend-overlay z-10" />
             <img 
-              src="./image 2.png" 
+              src="/Netsanet/image 2.png" 
               alt="Creative Vision" 
               className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-1000 blur-[2px] group-hover:blur-0"
               referrerPolicy="no-referrer"
@@ -278,7 +278,7 @@ const CreativePartner = () => {
                 <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-neon-cyan to-neon-magenta animate-pulse blur-xl opacity-30 group-hover:opacity-60 transition-opacity" />
                 <div className="relative w-full h-full rounded-full border-2 border-white/10 p-2 glass overflow-hidden">
                   <img 
-                    src="./image.png" 
+                    src="/Netsanet/image.png" 
                     alt="Netsanet Desta" 
                     className="w-full h-full object-cover rounded-full group-hover:scale-110 transition-transform duration-700"
                     referrerPolicy="no-referrer"
@@ -417,8 +417,8 @@ const Footer = () => (
 
 export default function App() {
   return (
-    <div className="min-h-screen flex flex-col selection:bg-neon-cyan selection:text-black">
-      <main className="flex-grow">
+    <div className="relative min-h-screen flex flex-col selection:bg-neon-cyan selection:text-black">
+      <main className="relative flex-grow">
         <Hero />
         <CreativePartner />
         <CreativeServices />
